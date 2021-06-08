@@ -1,0 +1,17 @@
+﻿@model Dojo_FeatureTogglesCore.Models.StoreBrowseViewModel
+
+@{
+
+  ViewBag.Title = "Browse Albums";
+}
+
+<h2>Browsing Genre: @Model.Genre.Name</h2>
+
+<ul>
+  @foreach (var album in Model.Albums)
+
+  {
+    <li>@album.Title</li>
+
+  }
+</ul>
